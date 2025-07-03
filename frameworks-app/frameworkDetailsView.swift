@@ -10,31 +10,33 @@ import SwiftUI
 
 struct FrameworkDetailsView: View {
     
+    var framework : Framework
+    @Binding var isShowingDetailsView : Bool
     var body: some View {
-        
-        
+    
         HStack {
             Spacer()
+            
             Button(action: {
-                
+                isShowingDetailsView = false
             }, label: {
-                Spacer()
                 Image(systemName: "xmark")
                     .resizable()
                     .frame(width: 20 , height: 20)
                     .foregroundStyle(.white)
-                    .padding()
             })
         }
+        .padding()
+
         Spacer()
 
-        FrameworkTitleView(framework: MockData.sampleFrameWork)
+        FrameworkTitleView(framework: framework)
         
         Spacer()
         
-        Text(MockData.sampleFrameWork.description)
-            .font(.caption)
-            .fontWeight(.semibold)
+        Text(framework.description)
+            .font(.title2)
+            .padding()
         
         Spacer()
         AfButton(title: "Learn More")
@@ -46,6 +48,8 @@ struct FrameworkDetailsView: View {
 
 
 #Preview {
-    FrameworkDetailsView()
+    FrameworkDetailsView(
+        framework : MockData.sampleFrameWork ,
+        isShowingDetailsView: .constant(false))
         .preferredColorScheme(.dark)
 }

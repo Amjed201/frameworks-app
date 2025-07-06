@@ -6,17 +6,28 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		970E71222E1B3DCF001296C8 /* frameworkGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970E711A2E1B3DCF001296C8 /* frameworkGridView.swift */; };
+		970E71232E1B3DCF001296C8 /* framework.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970E71182E1B3DCF001296C8 /* framework.swift */; };
+		970E71242E1B3DCF001296C8 /* frameworkGridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970E711B2E1B3DCF001296C8 /* frameworkGridViewModel.swift */; };
+		970E71252E1B3DCF001296C8 /* afButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970E71162E1B3DCF001296C8 /* afButton.swift */; };
+		970E71272E1B3DCF001296C8 /* frameworks_appApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970E711C2E1B3DCF001296C8 /* frameworks_appApp.swift */; };
+		970E71282E1B3DCF001296C8 /* frameworkDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970E71192E1B3DCF001296C8 /* frameworkDetailsView.swift */; };
+		970E71292E1B3DCF001296C8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 970E71202E1B3DCF001296C8 /* Preview Assets.xcassets */; };
+		970E712A2E1B3DCF001296C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 970E71172E1B3DCF001296C8 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		9703217E2E16014400313C2E /* frameworks-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "frameworks-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		970E71162E1B3DCF001296C8 /* afButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = afButton.swift; sourceTree = "<group>"; };
+		970E71172E1B3DCF001296C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		970E71182E1B3DCF001296C8 /* framework.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = framework.swift; sourceTree = "<group>"; };
+		970E71192E1B3DCF001296C8 /* frameworkDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = frameworkDetailsView.swift; sourceTree = "<group>"; };
+		970E711A2E1B3DCF001296C8 /* frameworkGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = frameworkGridView.swift; sourceTree = "<group>"; };
+		970E711B2E1B3DCF001296C8 /* frameworkGridViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = frameworkGridViewModel.swift; sourceTree = "<group>"; };
+		970E711C2E1B3DCF001296C8 /* frameworks_appApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = frameworks_appApp.swift; sourceTree = "<group>"; };
+		970E71202E1B3DCF001296C8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		970321802E16014400313C2E /* frameworks-app */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "frameworks-app";
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		9703217B2E16014400313C2E /* Frameworks */ = {
@@ -32,7 +43,7 @@
 		970321752E16014400313C2E = {
 			isa = PBXGroup;
 			children = (
-				970321802E16014400313C2E /* frameworks-app */,
+				970E711D2E1B3DCF001296C8 /* frameworks-app */,
 				9703217F2E16014400313C2E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +54,77 @@
 				9703217E2E16014400313C2E /* frameworks-app.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		970E711D2E1B3DCF001296C8 /* frameworks-app */ = {
+			isa = PBXGroup;
+			children = (
+				970E713B2E1B3EB1001296C8 /* Model */,
+				970E71372E1B3E7B001296C8 /* Screens */,
+				970E71362E1B3E64001296C8 /* Views */,
+				970E71212E1B3DCF001296C8 /* Preview Content */,
+				970E71172E1B3DCF001296C8 /* Assets.xcassets */,
+				970E711C2E1B3DCF001296C8 /* frameworks_appApp.swift */,
+			);
+			path = "frameworks-app";
+			sourceTree = "<group>";
+		};
+		970E71212E1B3DCF001296C8 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				970E71202E1B3DCF001296C8 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		970E71362E1B3E64001296C8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				970E713A2E1B3E9E001296C8 /* Buttons */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		970E71372E1B3E7B001296C8 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				970E71392E1B3E93001296C8 /* FrameworkDetailsView */,
+				970E71382E1B3E82001296C8 /* FrameworkGridView */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		970E71382E1B3E82001296C8 /* FrameworkGridView */ = {
+			isa = PBXGroup;
+			children = (
+				970E711A2E1B3DCF001296C8 /* frameworkGridView.swift */,
+				970E711B2E1B3DCF001296C8 /* frameworkGridViewModel.swift */,
+			);
+			path = FrameworkGridView;
+			sourceTree = "<group>";
+		};
+		970E71392E1B3E93001296C8 /* FrameworkDetailsView */ = {
+			isa = PBXGroup;
+			children = (
+				970E71192E1B3DCF001296C8 /* frameworkDetailsView.swift */,
+			);
+			path = FrameworkDetailsView;
+			sourceTree = "<group>";
+		};
+		970E713A2E1B3E9E001296C8 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				970E71162E1B3DCF001296C8 /* afButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		970E713B2E1B3EB1001296C8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				970E71182E1B3DCF001296C8 /* framework.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,9 +141,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				970321802E16014400313C2E /* frameworks-app */,
 			);
 			name = "frameworks-app";
 			packageProductDependencies = (
@@ -82,6 +161,7 @@
 				TargetAttributes = {
 					9703217D2E16014400313C2E = {
 						CreatedOnToolsVersion = 16.0;
+						LastSwiftMigration = 1600;
 					};
 				};
 			};
@@ -109,6 +189,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				970E71292E1B3DCF001296C8 /* Preview Assets.xcassets in Resources */,
+				970E712A2E1B3DCF001296C8 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +201,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				970E71222E1B3DCF001296C8 /* frameworkGridView.swift in Sources */,
+				970E71232E1B3DCF001296C8 /* framework.swift in Sources */,
+				970E71242E1B3DCF001296C8 /* frameworkGridViewModel.swift in Sources */,
+				970E71252E1B3DCF001296C8 /* afButton.swift in Sources */,
+				970E71272E1B3DCF001296C8 /* frameworks_appApp.swift in Sources */,
+				970E71282E1B3DCF001296C8 /* frameworkDetailsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,6 +337,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"frameworks-app/Preview Content\"";
@@ -268,6 +357,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.amjed.frameworks-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -278,6 +368,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"frameworks-app/Preview Content\"";

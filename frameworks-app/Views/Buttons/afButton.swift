@@ -17,14 +17,20 @@ struct AfButton: View {
         Button {
             print("")
         } label: {
-            Text(title)
-                .font(.title2)
-                .frame(width: 280 , height: 55)
-                .foregroundStyle(.white)
-                .background(.red)
-                .cornerRadius(10)
+            Label("Learn More", systemImage: "book.fill")
+
+//            Text(title)
+//                .font(.title2)
+//                .frame(width: 280 , height: 55)
+//                .foregroundStyle(.white)
+//                .background(.red)
+//                .cornerRadius(10)
 
         }
+        .buttonStyle(.bordered)
+        .controlSize(.regular)
+        .tint(.red)
+
     }
 }
 

@@ -13,23 +13,10 @@ struct FrameworkDetailsView: View {
     var framework : Framework
     @Binding var isShowingDetailsView : Bool
     var body: some View {
-    
-        HStack {
-            Spacer()
-            
-            Button(action: {
-                isShowingDetailsView = false
-            }, label: {
-                Image(systemName: "xmark")
-                    .resizable()
-                    .frame(width: 20 , height: 20)
-                    .foregroundStyle(.white)
-            })
-        }
-        .padding()
-
+        
+        
         Spacer()
-
+        
         FrameworkTitleView(framework: framework)
         
         Spacer()
@@ -40,9 +27,9 @@ struct FrameworkDetailsView: View {
         
         Spacer()
         AfButton(title: "Learn More")
-
-
-
+        
+        
+        
     }
 }
 
@@ -51,5 +38,5 @@ struct FrameworkDetailsView: View {
     FrameworkDetailsView(
         framework : MockData.sampleFrameWork ,
         isShowingDetailsView: .constant(false))
-        .preferredColorScheme(.dark)
+    .preferredColorScheme(.dark)
 }

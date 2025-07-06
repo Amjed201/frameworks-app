@@ -14,9 +14,7 @@ struct AfButton: View {
     
     var body: some View {
         
-        Button {
-            print("")
-        } label: {
+  
             Label("Learn More", systemImage: "book.fill")
 
 //            Text(title)
@@ -26,11 +24,8 @@ struct AfButton: View {
 //                .background(.red)
 //                .cornerRadius(10)
 
-        }
-        .buttonStyle(.bordered)
-        .controlSize(.regular)
-        .tint(.red)
-
+        
+       
     }
 }
 

@@ -12,25 +12,43 @@ struct FrameworkDetailsView: View {
     
     var framework : Framework
     @Binding var isShowingDetailsView : Bool
+    @State private var isShowingSafariView  = false
+    
     var body: some View {
         
-        
-        Spacer()
-        
-        FrameworkTitleView(framework: framework)
-        
-        Spacer()
-        
-        Text(framework.description)
-            .font(.title2)
-            .padding()
-        
-        Spacer()
-        AfButton(title: "Learn More")
+        VStack {
+            
+            Spacer()
+            
+            FrameworkTitleView(framework: framework)
+            
+            Spacer()
+            
+            Text(framework.description)
+                .font(.title2)
+                .padding()
+            
+            Spacer()
+            
+            Button {
+                isShowingSafariView = true
+            } label: {
+                AfButton(title: "Learn More")
+            }
+            .buttonStyle(.bordered)
+            .controlSize(.regular)
+            .tint(.red)
+            
+            
+        }
+        .sheet(isPresented: $isShowingSafariView) {
+            SafariView(url: URL(string: framework.urlString)!)
+        }
         
         
         
     }
+    
 }
 
 

@@ -15,6 +15,7 @@
 		970E71282E1B3DCF001296C8 /* frameworkDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970E71192E1B3DCF001296C8 /* frameworkDetailsView.swift */; };
 		970E71292E1B3DCF001296C8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 970E71202E1B3DCF001296C8 /* Preview Assets.xcassets */; };
 		970E712A2E1B3DCF001296C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 970E71172E1B3DCF001296C8 /* Assets.xcassets */; };
+		970E713D2E1B400C001296C8 /* safariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970E713C2E1B4009001296C8 /* safariView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		970E711B2E1B3DCF001296C8 /* frameworkGridViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = frameworkGridViewModel.swift; sourceTree = "<group>"; };
 		970E711C2E1B3DCF001296C8 /* frameworks_appApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = frameworks_appApp.swift; sourceTree = "<group>"; };
 		970E71202E1B3DCF001296C8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		970E713C2E1B4009001296C8 /* safariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = safariView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,9 +124,18 @@
 		970E713B2E1B3EB1001296C8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				970E713E2E1B4313001296C8 /* UIKit Components */,
 				970E71182E1B3DCF001296C8 /* framework.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		970E713E2E1B4313001296C8 /* UIKit Components */ = {
+			isa = PBXGroup;
+			children = (
+				970E713C2E1B4009001296C8 /* safariView.swift */,
+			);
+			path = "UIKit Components";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,6 +215,7 @@
 				970E71222E1B3DCF001296C8 /* frameworkGridView.swift in Sources */,
 				970E71232E1B3DCF001296C8 /* framework.swift in Sources */,
 				970E71242E1B3DCF001296C8 /* frameworkGridViewModel.swift in Sources */,
+				970E713D2E1B400C001296C8 /* safariView.swift in Sources */,
 				970E71252E1B3DCF001296C8 /* afButton.swift in Sources */,
 				970E71272E1B3DCF001296C8 /* frameworks_appApp.swift in Sources */,
 				970E71282E1B3DCF001296C8 /* frameworkDetailsView.swift in Sources */,

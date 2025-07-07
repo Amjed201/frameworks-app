@@ -14,21 +14,22 @@ struct FrameworkGridView: View {
     
     
     var body: some View {
-        NavigationView {
+        NavigationStack {
             List {
                 ForEach(MockData.frameworks) { framework in
-                    NavigationLink(destination: {
-                        FrameworkDetailsView(framework: framework,
-                                             isShowingDetailsView: $viewModel.isShowingDetailsView)
-                    }, label: {
+                    NavigationLink(value : framework) {
                         FrameworkTitleView(framework: framework)
-                        
-                    })
+
+                    }
                 }
             }
             
             
             .navigationTitle("🍎 Frameworks")
+            .navigationDestination(for: Framework.self) { framework in
+                FrameworkDetailsView(framework: framework,
+                                                           isShowingDetailsView: $viewModel.isShowingDetailsView)
+            }
             
         }
         .accentColor(Color(.label))
